@@ -63,7 +63,7 @@ const FormPage = ()=>{
      e.preventDefault();
     const result = formValidation(userInput);
            setErrors(result);
-    console.log(errors);
+      console.log(userInput);
      
   }
   const classes = useStyle();

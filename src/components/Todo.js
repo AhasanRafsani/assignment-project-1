@@ -74,7 +74,7 @@ const Todo = ({title,description,author,check,index,pos,setBorder})=>{
                     <Typography sx={{fontSize:"15px"}}>{title}</Typography>
                     <Typography sx={{fontSize:"10px"}}>{description}</Typography>
                     <Typography sx={{fontSize:"10px"}}>{author}</Typography>
-                    <Typography sx={{fontSize:"10px",backgroundColor:`${check?"rgba(60,197,113,0.7)":"rgba(255,0,0,0.5)"}`,width:"15%"}}>{ check ? "COMPLETED":"INCOMPLETED"}</Typography>
+                    <Typography sx={{fontSize:"10px",backgroundColor:`${check?"rgba(60,197,113,0.7)":"rgba(255,0,0,0.5)"}`,width:"90px"}}>{ check ? "COMPLETED":"INCOMPLETED"}</Typography>
                 </Box>
             </Box>
                  <Button sx={{margin:"10px 40%"}}  onClick={()=>addNewTodoHandler(index+1)} variant="contained">add</Button>

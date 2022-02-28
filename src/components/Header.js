@@ -22,11 +22,11 @@ const Header = ()=>{
     }
     return(
          <>
-              <AppBar position="static">
+              <AppBar position="static" sx={{backgroundColor:"rgb(112,128,144)"}}>
                   <Toolbar variant="dense">
-                    <Box sx={{marginLeft:"20%"}}>
+                    <Box sx={{marginLeft:"16%"}}>
                       <Button color="inherit" onClick={homeButton}>Home</Button>
-                      <Button color="inherit" onClick={formButton}>Form</Button>
+                      <Button color="inherit" onClick={formButton}>My Form</Button>
                       <Button color="inherit" onClick={infoButton}>Info</Button>
                       <Button color="inherit" onClick={todoButton}>Todo</Button>
                       <Button color="inherit" onClick={dropDownMenuButton}>Dropdown Menu</Button>

@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {BrowserRouter,Switch,Route} from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import FormPage from "./pages/FormPage";
+import InfoPage from "./pages/InfoPage";
+import TodoPage from "./pages/TodoPage";
+import DropdownMenuPage from "./pages/DropdownMenuPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     
+            <BrowserRouter>
+                 <Switch>
+                     <Route  exact path="/" component={HomePage}/>
+                     <Route  path="/form" component={FormPage}/>
+                     <Route  path="/info" component={InfoPage}/>
+                     <Route  path="/todo" component={TodoPage}/>
+                     <Route  path="/drop_down_menu" component={DropdownMenuPage}/>
+                 </Switch>
+            </BrowserRouter>
+     
+    </>
   );
 }
 
